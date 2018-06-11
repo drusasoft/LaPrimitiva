@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutPantallaEstadisticas"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_pantalla_estadisticas"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppTheme.toolBar"
+        android:elevation="4dp"
+        app:titleTextAppearance="@style/AppTheme.toolbarTitle"/>
+
+
+
+     <ScrollView
+         android:id="@+id/scrollViewEstadisticas"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewGanadores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="40dp"
+                android:visibility="invisible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:text="@string/titPantallaEstadisticas2"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorTeal"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/colorTeal"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewGanador1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="60sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorTealClaro"/>
+
+
+                        <TextView
+                            android:id="@+id/textViewGanador2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="60sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorTealClaro"
+                            android:layout_marginLeft="20dp"/>
+
+
+                        <TextView
+                            android:id="@+id/textViewGanador3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="60sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorTealClaro"
+                            android:layout_marginLeft="20dp"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewGanador4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="60sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorTealClaro"/>
+
+                        <TextView
+                            android:id="@+id/textViewGanador5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="60sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorTealClaro"
+                            android:layout_marginLeft="20dp"/>
+
+
+                        <TextView
+                            android:id="@+id/textViewGanador6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="60sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorTealClaro"
+                            android:layout_marginLeft="20dp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/textViewVerResto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+                android:text="@string/txtRestoNumeros"
+                android:textStyle="bold"
+                android:textColor="@drawable/texto_pulsacion3"
+                android:clickable="true"/>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewResto"
+                android:layout_width="match_parent"
+                android:layout_height="1700dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="invisible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:text="@string/txtNumeroApariciones"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorIndigo"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/colorIndigo"/>
+
+                    <GridView
+                        android:id="@+id/gridRestoNumeros"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:numColumns="3"
+                        android:layout_marginTop="30dp"
+                        android:verticalSpacing="15dp"/>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+     </ScrollView>
+
+
+
+</LinearLayout>

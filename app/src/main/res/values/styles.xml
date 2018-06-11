@@ -8,11 +8,12 @@
         <item name="colorAccent">@color/colorAccent</item>
 
         <item name="android:windowBackground">@color/colorFondo</item>
+        <item name="android:textColorHint">@color/colorTealClaro</item>
     </style>
 
     <!-- Estilo de la ToolBa-->
     <style name="AppTheme.toolBar" parent="AppTheme">
-        <item name="android:colorControlNormal">@color/colorBlanco</item>
+        <item name="colorControlNormal">@color/colorBlanco</item>
     </style>
 
     <style name="AppTheme.toolbarTitle" parent="TextAppearance.AppCompat.Title">
@@ -20,6 +21,11 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <!-- Fin de Estilo de la ToolBal-->
+    <!--Estilo del texto de Navigation drawer-->
+    <style name="AppTheme.drawerTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
 
 </resources>

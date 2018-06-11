@@ -3,7 +3,13 @@
     <color name="colorPrimary">#0288D1</color>
     <color name="colorPrimaryDark">#01579B</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="colorFondo">#80CBC4</color>
+    <color name="colorFondo">#E1F5FE</color>
 
+    <color name="colorTeal">#00695C</color>
+    <color name="colorTealClaro">#4DB6AC</color>
+    <color name="colorIndigo">#283593</color>
+    <color name="colorIndigoClaro">#7986CB</color>
     <color name="colorBlanco">#FFFFFF</color>
+    <color name="colorNegro">#000000</color>
+    <color name="gris_oscuro">#37474F</color>
 </resources>

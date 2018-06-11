@@ -1,26 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.dssoft.laprimitiva.PantallaPrincipal">
+    android:layout_height="match_parent">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolBarPrincipal"
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimary"
-        app:theme="@style/AppTheme.toolBar"
-        app:titleTextAppearance="@style/AppTheme.toolbarTitle"/>
+        android:layout_height="match_parent"
+        android:id="@+id/layout_pantalla_principal"
+        tools:context="com.dssoft.laprimitiva.iu.PantallaPrincipal">
 
-    <TextView
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolBarPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            app:theme="@style/AppTheme.toolBar"
+            app:titleTextAppearance="@style/AppTheme.toolbarTitle"/>
+
+        <Button
+            android:id="@+id/btnEstadisticas"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/fondo_botones"
+            android:gravity="left|center_vertical"
+            android:text="@string/btnEstadisticas"
+            android:textColor="@drawable/texto_pulsacion"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolBarPrincipal"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnAleatorio"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/btnCombinacion"
+            android:textColor="@drawable/texto_pulsacion"
+            android:textStyle="bold"
+            android:background="@drawable/fondo_botones"
+            android:gravity="left|center_vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnEstadisticas"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnGandoras"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/fondo_botones"
+            android:gravity="left|center_vertical"
+            android:text="@string/btnGanadoras"
+            android:textColor="@drawable/texto_pulsacion"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnAleatorio"
+            tools:ignore="MissingConstraints" />
+
+
+        <Button
+            android:id="@+id/btnInsertar"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/btnInsertarCombinacion"
+            android:background="@drawable/fondo_botones"
+            android:gravity="left|center_vertical"
+            android:textColor="@drawable/texto_pulsacion"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnGandoras"
+            tools:ignore="MissingConstraints" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!-- Menu Lateral-->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/leftDrawer"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="start"
+        app:itemTextColor="@drawable/texto_pulsacion"
+        app:itemTextAppearance="@style/AppTheme.drawerTextStyle"
+        app:headerLayout="@layout/layout_nav_header"
+        app:menu="@menu/drawer_menu"/>
 
-</android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.DrawerLayout>

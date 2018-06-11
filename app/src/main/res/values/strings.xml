@@ -1,3 +1,67 @@
 <resources>
     <string name="app_name">LaPrimitiva</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <!-- Data Manager -->
+    <string name="mensaje_ok">Combincion Insertada, OK</string>
+    <!-- Fin Data manager-->
+
+    <!-- Drawer Options-->
+    <string name="drawer_opcion1">Estadisticas</string>
+    <string name="drawer_opcion2">Combinaciones Ganadoras</string>
+    <string name="drawer_opcion3">Combinación Aleatoria</string>
+    <string name="drawer_opcion4">Insertar Combinación</string>
+    <string name="drawer_opcion5">Escanear</string>
+    <!-- Fin Drawer Options-->
+
+    <!-- Pantalla Principal-->
+    <string name="menu_principal_1">Conectar</string>
+    <string name="btnEstadisticas">Ver Estadísticas</string>
+    <string name="btnCombinacion">Combinacion Aleatoria</string>
+    <string name="btnGanadoras">Combinaciones Ganadoras</string>
+    <string name="btnInsertarCombinacion">Insertar Combinación</string>
+    <string name="mens_lista_vacia">No se ha obtenido datos del servidor. Vuelve a intentar la Conexion</string>
+    <!-- Fin Pantalla Principal-->
+
+    <!--Pantalla Estadisticas -->
+    <string name="titPantallaEstadisticas">Estadisitcas</string>
+    <string name="titPantallaEstadisticas2">Número Ganadores</string>
+    <string name="txtRestoNumeros">Ver Numeros Y Apariciones</string>
+    <string name="txtRestoNumeros2">Ocultar</string>
+    <string name="txtNumeroApariciones">Números y Apariciones</string>
+    <!-- Fin Pantalla Estadisticas -->
+
+    <!--Pantalla Combinaciones Ganadoras -->
+    <string name="titPantallaCombinaciones">Ganadoras</string>
+    <string name="txtVerCombinaciones">Ver Combinaciones</string>
+    <!-- Fin Pantalla Combinaciones -->
+
+    <!-- Pantalla Insertar Combinacion -->
+    <string name="titPantallaInsertar">Insertar Combinacion</string>
+    <string name="errorVacios">Se deben insertar todos los datos</string>
+    <string name="errorFecha">La fecha introducida no es correcta</string>
+    <string name="errorFormatoNum">Error, Los numeros de la combinacion deben de tener dos cifras</string>
+    <string name="errorNumRepetidos">Error, La combinacion no puede tener numeros repetidos</string>
+    <string name="errorNumValores">Error, Los numeros deben de ser mayores de 0 y menores de 50</string>
+    <string name="errorCompReint">Error, El Reintegro y el Complementario no deben de ser menores de 0 ni mayores de 49</string>
+    <string name="txtHintFecha">Fecha Combinacion (dd-mm-yyyy)</string>
+    <string name="txtHint1">Num1</string>
+    <string name="txtHint2">Num2</string>
+    <string name="txtHint3">Num3</string>
+    <string name="txtHint4">Num4</string>
+    <string name="txtHint5">Num5</string>
+    <string name="txtHint6">Num6</string>
+    <string name="txtHintComp">Complementario</string>
+    <string name="txtHintReint">Reintegro</string>
+    <string name="btnInsertar">Insertar</string>
+    <string name="btnBorrar">Borrar</string>
+    <!-- Fin pantalla Insertar-->
+
+    <!-- Pantalla Combinacion Aleatoria -->
+    <string name="titPantallaAleatoria">Aleatoria</string>
+    <string name="titCardAleatoria">Combinación Aleatoria</string>
+    <string name="txtNuevaCombinacion">Generar Nueva</string>
+    <!--Fin Pantalla Aleatoria-->
+
 </resources>
